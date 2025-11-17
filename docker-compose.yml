@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  tms-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tms-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
